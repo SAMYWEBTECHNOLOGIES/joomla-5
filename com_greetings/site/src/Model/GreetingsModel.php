@@ -65,6 +65,7 @@ class GreetingsModel extends ListModel
 				);
 
 			$query->from('`#__greetings` AS a');
+			$query->where($db->q('state') '= 1');
 			$query->order('ordering ASC');
 
 
