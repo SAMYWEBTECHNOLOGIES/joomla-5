@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="4.0" client="site" method="upgrade">
+    <name>MOD_RANDOMGREETINGS</name>
+    <creationDate>2024-07-17</creationDate>
+    <copyright>2024 Samy Web Technologies</copyright>
+    <author>Ankit Jagetia</author>
+    <authorEmail>akjagetia@gmail.com</authorEmail>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <version>1.0</version>
+    <description>Simple joommla module to display the random Greetings</description>
+    <namespace>Samywebtechnologies\Module\RandomGreetings</namespace>
+    <files>
+        <filename module="mod_randomgreetings">mod_randomgreetings.php</filename>
+        <folder>tmpl</folder>
+        <folder>Helper</folder>
+        <folder>language</folder>
+        <filename>mod_randomgreetings.xml</filename>
+    </files>
+</extension>

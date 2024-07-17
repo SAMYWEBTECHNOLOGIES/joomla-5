@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="4.0" method="upgrade">
+    <name>com_greetings</name>
+    <creationDate>2024-07-17</creationDate>
+    <copyright>2024 Samy Web Technologies</copyright>
+    <author>Ankit Jagetia</author>
+    <authorEmail>akjagetia@gmail.com</authorEmail>
+    <version> 1.0.0</version>
+    <description>This is a basic component for creating and displaying greetings with message</description>
+    <namespace path="src">Samywebtechnologies\Component\Greetings</namespace>
+    
+
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+
+    <files folder="site">
+        <folder>src</folder>
+        <folder>tmpl</folder>
+    </files>
+    <languages folder="site/languages">     
+			<language tag="en-GB">en-GB/com_greetings.ini</language>
+    </languages>
+    <administration>
+        <menu>COM_GREETINGS</menu>
+        <submenu>           
+			<menu link="option=com_greetings&amp;view=greetings" view="greetings" alt="Greetings/Greetings">COM_GREETINGS_TITLE_GREETINGS</menu>
+        </submenu>
+        <files folder="administrator">
+            <folder>forms</folder>
+            <folder>src</folder>
+            <folder>tmpl</folder>
+            <folder>services</folder>
+            <folder>sql</folder>
+        </files>
+        <languages folder="administrator/languages">
+            
+			<language tag="en-GB">en-GB/com_greetings.ini</language>
+			<language tag="en-GB">en-GB/com_greetings.sys.ini</language>
+        </languages>
+    </administration>
+</extension>

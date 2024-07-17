@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form addfieldprefix="Samywebtechnologies\Component\Greetings\Administrator\Field">
+  <fieldset>
+    <field 
+      name="id" 
+      type="text"   
+      readonly="true" 
+      class="readonly" 
+      default="0" 
+      description="JGLOBAL_FIELD_ID_DESC"
+    />
+
+    <field 
+      name="state" 
+      default="1" 
+      type="list" 
+      label="JSTATUS" 
+      description="JFIELD_PUBLISHED_DESC"
+      class="inputbox"
+      size="1"
+    >
+      <option value="1">JPUBLISHED</option>
+      <option value="0">JUNPUBLISHED</option>
+    </field>
+
+    <field 
+      name="ordering"
+    />
+
+    <field 
+      name="title" 
+      maxlength="50" 
+      filter="safehtml" 
+      type="text" 
+      label="JGLOBAL_TITLE" 
+      description="JFIELD_TITLE_DESC" 
+      hint="COM_GREETINGS_FORM_LBL_GREETING_TITLE"
+    />
+    
+    <field 
+      name="message" 
+      cols="20" 
+      rows="4" 
+      filter="safehtml" 
+      type="textarea" 
+      label="COM_GREETINGS_FORM_LBL_GREETING_MESSAGE" 
+      description="COM_GREETINGS_FORM_DESC_GREETING_MESSAGE" 
+      hint="COM_GREETINGS_FORM_LBL_GREETING_MESSAGE"
+    />
+    
+  </fieldset>
+</form>
