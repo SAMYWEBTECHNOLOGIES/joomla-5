@@ -60,12 +60,12 @@ class GreetingsModel extends ListModel
 			// Select the required fields from the table.
 			$query->select(
 						$this->getState(
-								'list.select', 'DISTINCT a.*'
+								'list.select', 'a.*'
 						)
 				);
 
 			$query->from('`#__greetings` AS a');
-			$query->where($db->q('state') .'= 1');
+			$query->where('state = 1');
 			$query->order('ordering ASC');
 
 
