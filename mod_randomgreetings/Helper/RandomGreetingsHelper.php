@@ -13,7 +13,8 @@ class RandomGreetingsHelper
         try {
         $query = $db->getQuery(true);
         $query->select('*')
-            ->from($db->quoteName('#__greetings'))
+            ->from($db->qn('#__greetings'))
+            ->where($db->q('state') '= 1')
             ->order('RAND()')
             ->setLimit(1); // Limit to one random row
         $db->setQuery($query);
