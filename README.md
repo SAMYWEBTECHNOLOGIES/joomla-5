@@ -27,4 +27,4 @@ When you open that menu item you will see list of Greetings published from Backe
 Just download the folder as a zip. Install this using Joomla installation.
 
 
-This module display a random Greeting published in the com_greetings component.
+This module displays a random Greeting published in the com_greetings component.
